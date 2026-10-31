@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Lockstep Language — Sprint Board</title>
+<style>
+  :root {
+    --bg: #f5f1e8;
+    --ink: #2a2420;
+    --muted: #6b625a;
+    --card: #ffffff;
+    --border: #d9d1c3;
+    --todo: #9aa0a6;
+    --doing: #c89b2a;
+    --done: #3a7a3a;
+    --accent: #7a3a2a;
+    --chip: #ece4d4;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+    font-family: "Lora", Georgia, serif; }
+  .page { padding: 36px 44px 48px; max-width: 1600px; margin: 0 auto; }
+  header { display: flex; justify-content: space-between; align-items: flex-end;
+    border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 28px; }
+  h1 { font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+    font-weight: 600; font-size: 42px; margin: 0; letter-spacing: 0.5px; }
+  .sub { color: var(--muted); font-size: 15px; margin-top: 6px; }
+  .meta { text-align: right; font-size: 14px; color: var(--muted); line-height: 1.6; }
+  .meta strong { color: var(--ink); }
+
+  .board { display: grid; grid-template-columns: 1fr 1fr 1.6fr; gap: 22px; }
+  .col { background: #efe7d8; border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px; min-height: 580px; }
+  .col h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600;
+    font-size: 22px; margin: 2px 0 14px; display: flex; align-items: center; gap: 10px; }
+  .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+  .todo .dot { background: var(--todo); }
+  .doing .dot { background: var(--doing); }
+  .done .dot { background: var(--done); }
+  .count { margin-left: auto; font-size: 13px; color: var(--muted); font-family: "Lora", serif; }
+
+  .empty { color: var(--muted); font-style: italic; font-size: 14px; padding: 12px 4px; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px 15px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+  .card-head { display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 8px; }
+  .id { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600;
+    font-size: 18px; color: var(--accent); }
+  .pts { background: var(--chip); color: var(--ink); font-size: 12px;
+    padding: 3px 9px; border-radius: 999px; font-weight: 600; }
+  .title { font-size: 15px; line-height: 1.45; margin: 0 0 10px; }
+  .row { font-size: 12.5px; color: var(--muted); margin: 4px 0; }
+  .row b { color: var(--ink); font-weight: 600; }
+  details { margin-top: 8px; }
+  details[open] > summary { margin-bottom: 2px; }
+  summary { cursor: pointer; font-size: 12.5px; color: var(--accent); }
+  ul { margin: 6px 0 0; padding-left: 18px; }
+  li { font-size: 12.5px; line-height: 1.5; margin: 2px 0; }
+  .status { display: inline-block; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.6px; padding: 3px 8px; border-radius: 4px;
+    background: var(--done); color: #fff; text-transform: uppercase; }
+  footer { margin-top: 24px; font-size: 12px; color: var(--muted);
+    display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <h1>Lockstep Language — Sprint Board</h1>
+      <div class="sub">Sprint Goal: deliver a responsive front-end prototype demonstrating Tell → Show → Do and a simulated registration flow.</div>
+    </div>
+    <div class="meta">
+      <div><strong>Developer:</strong> Jey Lofton</div>
+      <div><strong>Planned:</strong> 11 pts &nbsp;·&nbsp; <strong>Completed:</strong> 11 pts</div>
+      <div><strong>Status:</strong> Sprint Complete</div>
+    </div>
+  </header>
+
+  <div class="board">
+    <section class="col todo">
+      <h2><span class="dot"></span> To Do <span class="count">0 stories · 0 pts</span></h2>
+      <div class="empty">No stories remaining.</div>
+    </section>
+
+    <section class="col doing">
+      <h2><span class="dot"></span> In Progress <span class="count">0 stories · 0 pts</span></h2>
+      <div class="empty">No stories in progress.</div>
+    </section>
+
+    <section class="col done">
+      <h2><span class="dot"></span> Done <span class="count">3 stories · 11 pts</span></h2>
+
+      <article class="card">
+        <div class="card-head"><span class="id">US-01</span><span class="pts">3 pts</span></div>
+        <p class="title">As a visitor, I want to understand how Lockstep Language works so I can decide whether to register.</p>
+        <div class="row"><b>Priority:</b> High &nbsp;·&nbsp; <span class="status">Done</span></div>
+        <div class="row"><b>Tasks:</b> Home · How It Works · Learning Method Details · pronunciation / syllable demo · client-side routing.</div>
+        <details open><summary>Acceptance criteria</summary>
+          <ul>
+            <li>Home introduces Tell → Show → Do and the four competencies.</li>
+            <li>"How It Works" walks through the three stages with a worked example (<i>necesito</i>).</li>
+            <li>"Learning Method Details" covers the full sequence, pronunciation demo, cumulative-vocabulary table, lesson-length options.</li>
+            <li>All reachable without registering.</li>
+          </ul>
+        </details>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span class="id">US-02</span><span class="pts">5 pts</span></div>
+        <p class="title">As a visitor, I want to complete a registration form so I can begin my learning journey.</p>
+        <div class="row"><b>Priority:</b> High &nbsp;·&nbsp; <span class="status">Done</span> <span style="color:var(--muted); font-size:11px;">(simulated, front-end only)</span></div>
+        <div class="row"><b>Tasks:</b> Form fields · real-time + submit validation · inline errors + summary · show/hide password · confirmation page · prototype disclosure.</div>
+        <details open><summary>Acceptance criteria</summary>
+          <ul>
+            <li>Collects first name, last name, email, password, confirm password, Terms agreement.</li>
+            <li>Invalid input caught inline with a form-level summary.</li>
+            <li>Valid submission advances to a confirmation screen.</li>
+            <li>Note: no backend; no account or email is created. Documented in-page and in README.</li>
+          </ul>
+        </details>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span class="id">US-03</span><span class="pts">3 pts</span></div>
+        <p class="title">As a user, I want the website to display properly on different screen sizes so I can use it on my preferred device.</p>
+        <div class="row"><b>Priority:</b> Medium &nbsp;·&nbsp; <span class="status">Done</span></div>
+        <div class="row"><b>Tasks:</b> Flexbox layout · 860px + 560px breakpoints · hamburger menu · close on outside click / Escape / resize.</div>
+        <details open><summary>Acceptance criteria</summary>
+          <ul>
+            <li>Layout reflows cleanly at tablet and mobile breakpoints.</li>
+            <li>Primary nav collapses into a hamburger menu that opens and closes correctly.</li>
+          </ul>
+        </details>
+      </article>
+
+    </section>
+  </div>
+
+  <footer>
+    <div>Lockstep Language · FSDI 115 Sprint Review</div>
+    <div>github.com/jeylofton/Lockstep-Language</div>
+  </footer>
+</div>
+</body>
+</html>
