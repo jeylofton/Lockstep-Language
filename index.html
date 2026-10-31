@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lockstep Language — Learn it. Practice it. Use it.</title>
+<link rel="stylesheet" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+      <a href="#" class="nav-link" data-goto="home">Home</a>
+      <a href="#" class="nav-link" data-goto="how">How It Works</a>
+      <a href="#" class="nav-link" data-goto="about">About Us</a>
+    </nav>
+    <a href="#" class="nav-logo" data-goto="home" aria-label="Lockstep Language home">
+      <img src="images/logo.png" alt="Lockstep Language">
+    </a>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-primary" data-goto="register">Register</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== HOME ===================== -->
+  <section class="page is-active" data-page="home">
+    <div class="hero">
+      <div class="hero-inner hero-home">
+        <div class="eyebrow-rule">
+          <span class="rule"></span>
+          <span class="eyebrow-script">Tell · Show · Do</span>
+          <span class="rule"></span>
+        </div>
+        <h1 class="hero-title">Welcome to<br><em>Lockstep Language</em></h1>
+        <p class="hero-copy">An interactive way to understand, retain, and apply everyday Spanish. Learn why words are used, how they sound, and how to use them in real conversations.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-lg" data-goto="register">Get Started</a>
+          <a href="#" class="btn btn-ghost btn-lg" data-goto="how">How It Works →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <div class="plate plate-wide">
+        <img src="images/hero_image.png" alt="Learner practicing Spanish with headphones, notebook and laptop">
+      </div>
+
+      <section class="section split split-280">
+        <div class="split-head">
+          <div class="kicker">Instructional Method</div>
+          <h2>Learn in three steps: Tell → Show → Do</h2>
+        </div>
+        <div class="rows rows-top">
+          <div class="row row-step">
+            <span class="step-num">01</span>
+            <h3>Tell</h3>
+            <p>What a word means, how it is used, and why it matters.</p>
+          </div>
+          <div class="row row-step">
+            <span class="step-num">02</span>
+            <h3>Show</h3>
+            <p>Pronunciation, syllables, sentence structure, and real usage.</p>
+          </div>
+          <div class="row row-step">
+            <span class="step-num">03</span>
+            <h3>Do</h3>
+            <p>Practice speaking, listening, reading, and writing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bordered-top">
+        <div class="section-head">
+          <h2>Build all four language skills</h2>
+          <div class="kicker">Four Competencies</div>
+        </div>
+        <div class="competencies">
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <div class="competency-title">Reading</div>
+            <p>Understand written words in context.</p>
+          </div>
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>
+            <div class="competency-title">Listening</div>
+            <p>Recognize words in natural speech.</p>
+          </div>
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>
+            <div class="competency-title">Speaking</div>
+            <p>Pronounce words with confidence.</p>
+          </div>
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+            <div class="competency-title">Writing</div>
+            <p>Use words correctly in sentences.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bordered-top">
+        <div class="section-head">
+          <h2>Sample Spanish Vocabulary</h2>
+          <div class="kicker">Lesson Preview</div>
+        </div>
+        <div class="vocab-grid">
+          <div class="vocab-row"><span class="vocab-word">hola</span><span class="vocab-dots"></span><span class="vocab-gloss">hello</span></div>
+          <div class="vocab-row"><span class="vocab-word">necesito</span><span class="vocab-dots"></span><span class="vocab-gloss">I need</span></div>
+          <div class="vocab-row"><span class="vocab-word">agua</span><span class="vocab-dots"></span><span class="vocab-gloss">water</span></div>
+          <div class="vocab-row"><span class="vocab-word">gracias</span><span class="vocab-dots"></span><span class="vocab-gloss">thank you</span></div>
+        </div>
+      </section>
+
+      <section class="section split split-280 bordered-top">
+        <div class="split-head">
+          <div class="kicker">Benefits</div>
+          <h2>Why practical language learning?</h2>
+        </div>
+        <div class="benefit-cards">
+          <div class="benefit-card">
+            <h4>Understand, don't memorize</h4>
+            <p>Learn the meaning and purpose behind each word.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>Made for everyday life</h4>
+            <p>Focus on language you will use in real situations.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>Learn at your pace</h4>
+            <p>Lessons fit around your schedule.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="page" data-page="how">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">How It Works</div>
+        <h1 class="hero-title hero-title-md">How Lockstep Language Works</h1>
+        <p class="hero-copy hero-copy-left">Every lesson moves through three stages. You first learn what a word means, then see and hear how it works, then put it into practice.</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <section class="section">
+        <div class="section-head">
+          <h2>Three instructional stages</h2>
+          <div class="kicker">Tell · Show · Do</div>
+        </div>
+        <div class="stage-images">
+          <img src="images/stage_1.png" alt="Stage 1, Tell: vocabulary and meaning">
+          <img src="images/stage_2.png" alt="Stage 2, Show: pronunciation and syllables">
+          <img src="images/stage_3.png" alt="Stage 3, Do: practice activities">
+        </div>
+      </section>
+
+      <section class="section bordered-top">
+        <div class="kicker">Example Lesson Preview</div>
+        <h2 class="section-title-solo">One Spanish word through Tell → Show → Do</h2>
+        <div class="flow-row">
+          <div class="flow-card">
+            <div class="flow-label">Tell</div>
+            <div class="flow-word">necesito <span class="flow-eq">=</span> <em>"I need"</em></div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-card">
+            <div class="flow-label">Show</div>
+            <div class="flow-word flow-syll">ne-ce-<strong>si</strong>-to</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-card flow-card-active">
+            <div class="flow-label">Do</div>
+            <div class="flow-word flow-italic">"Necesito agua."</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bordered-top">
+        <div class="section-head">
+          <h2>How the four competencies work together</h2>
+          <div class="kicker">Four Competencies</div>
+        </div>
+        <div class="competencies">
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <div class="competency-title">Reading</div>
+            <p>Recognize words and follow written meaning.</p>
+          </div>
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>
+            <div class="competency-title">Listening</div>
+            <p>Understand words as they are spoken.</p>
+          </div>
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>
+            <div class="competency-title">Speaking</div>
+            <p>Say words clearly with correct pronunciation.</p>
+          </div>
+          <div class="competency">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+            <div class="competency-title">Writing</div>
+            <p>Use new words accurately in sentences.</p>
+          </div>
+        </div>
+        <div class="section-footnote">
+          <a href="#" class="btn btn-ghost btn-lg" data-goto="method">Explore the Learning Method in Detail →</a>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="cta-inner">
+          <div>
+            <h2>Ready to start learning?</h2>
+            <p>Create a free account to begin.</p>
+          </div>
+          <a href="#" class="btn btn-primary" data-goto="register">Create Your Account</a>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ===================== LEARNING METHOD DETAILS ===================== -->
+  <section class="page" data-page="method">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="breadcrumb">
+          <a href="#" data-goto="how">How It Works</a><span>/</span><span>Learning Method Details</span>
+        </div>
+        <h1 class="hero-title hero-title-md">Explore the Lockstep Learning Method</h1>
+        <p class="hero-copy hero-copy-left">A closer look at what a lesson involves, before you register.</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <section class="section split split-280">
+        <div class="split-head">
+          <div class="kicker">Instructional Sequence</div>
+          <h2>The Tell → Show → Do sequence</h2>
+        </div>
+        <div class="flow-row flow-row-bordered">
+          <div class="flow-step">
+            <h3>Tell</h3>
+            <p>Meaning, usage, and why the word matters.</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <h3>Show</h3>
+            <p>Hear it, see the syllables, see it in a sentence.</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <h3>Do</h3>
+            <p>Practice it across all four competencies.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split split-280 bordered-top">
+        <div class="split-head">
+          <div class="kicker">Competency Practice</div>
+          <h2>How the four competencies are practiced</h2>
+        </div>
+        <div class="rows">
+          <div class="row row-competency">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <div class="competency-title">Reading</div>
+            <p>Read the word in short everyday sentences.</p>
+          </div>
+          <div class="row row-competency">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>
+            <div class="competency-title">Listening</div>
+            <p>Listen to the word spoken and identify it.</p>
+          </div>
+          <div class="row row-competency">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>
+            <div class="competency-title">Speaking</div>
+            <p>Repeat the word aloud and compare with the example.</p>
+          </div>
+          <div class="row row-competency">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+            <div class="competency-title">Writing</div>
+            <p>Write the word and use it in your own sentence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split split-reverse bordered-top">
+        <div>
+          <div class="kicker">Pronunciation Support</div>
+          <h2>Pronunciation and syllable breakdown</h2>
+          <p class="justified">Each Spanish word is split into syllables and paired with audio so you can hear and repeat each part before saying the whole word. The stressed syllable is marked in bold.</p>
+        </div>
+        <div class="pron-card" id="pron-card">
+          <!-- word rows injected by script.js from WORDS data -->
+          <div class="sample-sentences">
+            <div class="kicker">Sample sentences</div>
+            <div class="sentence"><em>Necesito agua.</em> — I need water.</div>
+            <div class="sentence"><em>Voy a la tienda.</em> — I'm going to the store.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split split-reverse-wide bordered-top">
+        <div class="lesson-table">
+          <div class="lesson-row">
+            <span class="lesson-id">LESSON 1</span>
+            <div class="tags">
+              <span class="tag tag-new">hola</span>
+              <span class="tag tag-new">gracias</span>
+            </div>
+          </div>
+          <div class="lesson-row">
+            <span class="lesson-id">LESSON 2</span>
+            <div class="tags">
+              <span class="tag tag-review">hola</span>
+              <span class="tag tag-review">gracias</span>
+              <span class="tag tag-new">necesito</span>
+              <span class="tag tag-new">agua</span>
+            </div>
+          </div>
+          <div class="lesson-row">
+            <span class="lesson-id">LESSON 3</span>
+            <div class="tags">
+              <span class="tag tag-review">hola</span>
+              <span class="tag tag-review">gracias</span>
+              <span class="tag tag-review">necesito</span>
+              <span class="tag tag-review">agua</span>
+              <span class="tag tag-new">tienda</span>
+            </div>
+          </div>
+          <div class="legend">
+            <span><i class="swatch swatch-new"></i>New word</span>
+            <span><i class="swatch swatch-review"></i>Review</span>
+          </div>
+        </div>
+        <div>
+          <div class="kicker">Cumulative Reinforcement</div>
+          <h2>Vocabulary that builds on itself</h2>
+          <p>Words from earlier lessons return in later ones, so you keep reviewing them as you learn new ones.</p>
+        </div>
+      </section>
+
+      <section class="section bordered-top">
+        <div class="duration-block">
+          <div class="kicker">Adjustable Lesson Duration</div>
+          <h2>Lessons that fit your day</h2>
+          <p>Lessons run from 4 to 20 minutes. Choose how long each lesson lasts.</p>
+          <div class="segmented" role="group" aria-label="Lesson duration (example)">
+            <span class="seg-opt">4 min</span>
+            <span class="seg-opt seg-opt-selected">5 min</span>
+            <span class="seg-opt seg-opt-selected">10 min</span>
+            <span class="seg-opt">15 min</span>
+            <span class="seg-opt">20 min</span>
+          </div>
+          <div class="recommend"><i class="swatch swatch-new"></i>Recommended: about 5 to 10 minutes per day</div>
+        </div>
+        <div class="progress-block">
+          <div class="kicker">Personalized Progress Tracking</div>
+          <h2>See your progress</h2>
+          <div class="plate plate-wide">
+            <img src="images/progress_by_competency.png" alt="Learning progress dashboard showing completion for reading, listening, speaking and writing">
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="cta-inner">
+          <h2>Ready to try the Lockstep method?</h2>
+          <a href="#" class="btn btn-primary" data-goto="register">Create Your Account</a>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="page" data-page="about">
+    <div class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title hero-title-lg">About Lockstep Language</h1>
+        <div class="mission">
+          <div class="kicker">Mission Statement</div>
+          <p class="mission-quote">Our mission is to help people learn everyday language and communicate confidently in real situations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <section class="section split split-reverse">
+        <div>
+          <div class="kicker">Why It Was Conceived</div>
+          <h2>Why Lockstep Language exists</h2>
+          <p class="justified">Many learners memorize vocabulary but struggle to use it in conversation. Lockstep Language was conceived to close that gap with structured instruction and repetition.</p>
+        </div>
+        <div class="plate plate-3-2">
+          <img src="images/everyday_conversation.png" alt="Two people talking over coffee, with Spanish phrases and translations">
+        </div>
+      </section>
+
+      <section class="section bordered-top">
+        <div class="benefit-cards benefit-cards-icons">
+          <div class="benefit-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"></path><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path></svg>
+            <h3>Communication over memorization</h3>
+            <p>Learners move from memorizing isolated Spanish words to using real-life Spanish phrases, such as "Necesito agua."</p>
+          </div>
+          <div class="benefit-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <h3>Learner-centered teaching</h3>
+            <p>Lessons follow a clear sequence and move at each learner's pace.</p>
+          </div>
+          <div class="benefit-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h3>Accessible and flexible</h3>
+            <p>Adjustable lesson lengths and readable, simple lessons make learning easy to fit into daily life.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="cta-inner">
+          <h2>Start learning with Lockstep</h2>
+          <a href="#" class="btn btn-primary" data-goto="register">Create Your Account</a>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ===================== REGISTER ===================== -->
+  <section class="page" data-page="register">
+    <div class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title hero-title-md">Create Your Lockstep Language Account</h1>
+        <p class="hero-copy hero-copy-left">Register to begin learning Spanish with Lockstep Language. All fields are required.</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <section class="section register-layout">
+        <form id="register-form" novalidate>
+          <div class="form-alert" id="form-alert" hidden role="alert">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+            <span id="form-alert-text"></span>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-first">First Name</label>
+              <input id="f-first" name="first" class="input" type="text" autocomplete="given-name">
+              <div class="field-error" data-error-for="first" hidden></div>
+            </div>
+            <div class="field">
+              <label for="f-last">Last Name</label>
+              <input id="f-last" name="last" class="input" type="text" autocomplete="family-name">
+              <div class="field-error" data-error-for="last" hidden></div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-email">Email Address</label>
+            <div class="input-wrap">
+              <input id="f-email" name="email" class="input" type="email" placeholder="name@example.com" autocomplete="email">
+              <svg class="input-check" viewBox="0 0 24 24" fill="none" stroke="#0F8F86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M20 6 9 17l-5-5"></path></svg>
+            </div>
+            <div class="field-error" data-error-for="email" hidden></div>
+          </div>
+
+          <div class="field">
+            <label for="f-pw">Password</label>
+            <div class="input-wrap">
+              <input id="f-pw" name="pw" class="input" type="password" autocomplete="new-password">
+              <button type="button" class="btn btn-ghost input-toggle" id="toggle-pw">Show</button>
+            </div>
+            <div class="field-error" data-error-for="pw" hidden></div>
+            <div class="field-hint" id="pw-hint">At least 8 characters.</div>
+          </div>
+
+          <div class="field">
+            <label for="f-pw2">Confirm Password</label>
+            <input id="f-pw2" name="pw2" class="input" type="password" autocomplete="new-password">
+            <div class="field-error" data-error-for="pw2" hidden></div>
+          </div>
+
+          <div class="field">
+            <label class="checkbox-label">
+              <input type="checkbox" id="f-terms" name="terms">
+              <span>I agree to the <a href="#" class="noop">Terms of Service</a> and <a href="#" class="noop">Privacy Policy</a>.</span>
+            </label>
+            <div class="field-error" data-error-for="terms" hidden></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Create Account</button>
+          <div class="signin-note">Already have an account? <a href="#" class="noop">Sign in</a></div>
+        </form>
+
+        <aside class="proto-notes">
+          <div class="kicker">Prototype notes</div>
+          <p>Prototype only: validation runs in the browser. No data is sent anywhere.</p>
+          <p>Valid submit → jumps to the confirmation screen. Invalid → errors shown, stays here.</p>
+          <p>"Sign in" is out of scope.</p>
+        </aside>
+      </section>
+    </div>
+  </section>
+
+  <!-- ===================== CONFIRM ===================== -->
+  <section class="page" data-page="confirm">
+    <div class="page-body">
+      <section class="confirm-section">
+        <div class="confirm-check">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0F8F86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+        </div>
+        <h1>Welcome to Lockstep Language!</h1>
+        <p>Your registration has been successfully completed.</p>
+        <p>You are ready to begin learning Spanish.</p>
+        <div class="confirm-rule"></div>
+        <p class="confirm-note">A confirmation email is on its way. When you sign in, you will be able to choose a lesson length and begin with the Tell → Show → Do sequence.</p>
+        <a href="#" class="btn btn-primary" data-goto="home">Return to Home</a>
+      </section>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-copy">© Lockstep Language</span>
+    <a href="#" data-goto="home">Home</a>
+    <a href="#" data-goto="how">How It Works</a>
+    <a href="#" data-goto="about">About Us</a>
+    <a href="#" data-goto="register">Register</a>
+  </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
